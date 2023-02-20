@@ -1,0 +1,146 @@
+body {
+    background-color:green;
+    color:yellow;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    text-align:64px;
+    height: 100%;
+}
+
+#note{
+    text-align: center;
+    background-color:yellow;
+    width: 50%;
+    margin: auto;
+    color: green;
+    font-size: larger;
+    border: 5px solid gainsboro;
+    box-shadow: 2px 2px 2px gainsboro;
+}
+
+#entertwo{
+    text-align: center;
+    background-color:yellow;
+    width: 50%;
+    margin: auto;
+    color: green;
+    font-size: larger;
+    border: 5px solid gainsboro;
+    box-shadow: 2px 2px 2px gainsboro;
+}
+
+
+#instruct{
+    text-align: center;
+    font-size:larger;
+    
+}
+
+.choices{
+    margin-top:50px;
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+#tosub{
+    
+    height:30px;
+    border-color:yellow;
+    color:Green;
+    font-size:25px;
+    text-align: center;
+    width: 25%;
+    margin: auto;
+    
+}
+
+#topush{
+border-color:yellow;
+    color:Green;
+    font-size:25px;
+    text-align: center;
+    height:30px;
+    width: 25%;
+    margin: auto;
+    
+}
+.forarray{
+    display:grid;
+    margin-top:50px;
+}
+button{
+    color:green;
+    height:40px;
+    padding:10px;
+    margin:8px;
+    background-color:yellow;
+}
+
+button:hover{
+    background-color: purple;
+    color: yellow;
+}
+
+
+
+#note:hover{
+    background-color: purple;
+    color: yellow;
+}
+
+#entertwo:hover{
+    background-color: purple;
+    color: yellow;
+}
+
+span{
+    font-size:30px;
+}
+
+
+#sub{
+    margin-top:20px;
+}
+
+h2{
+    text-align:center;
+}
+
+header{
+    text-align:center;
+    font-size:25px;
+}
+
+
+label{
+    text-align:center;
+}
+
+#toread{
+    color:yellow;
+    font-size:30px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width:416px) {
+    body{
+        font-size: 15px;
+    }
+    #entertwo{
+        text-align: center;
+        background-color:yellow;
+        width: 70%;
+        margin: auto;
+        color: green;
+        font-size: larger;
+        
+    }
+
+    span{
+        font-size: 20px;
+    }
+
+}
