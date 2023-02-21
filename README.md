@@ -1,0 +1,1 @@
+# polynomial-Evaluate Got the idea for this project while studying some Discrete maths.was built on the foundation of Horner's algorithm which enables mathematicians evaluate polynomials of n degree and as somebody with an Engineering background,I know how it feels having a tool like this particularly since it has to do with algebra.Mathematicians will find this useful.
