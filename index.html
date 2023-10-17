@@ -9,29 +9,29 @@
 </head>
 
 <body>
-    <header><hr>CALCULATOR FOR POLYNOMIAL EVALUATION<hr></header>
-    
-    <p id="instruct">Enter co-efficients of x from largest degree(power)to lowest degree(power of zero) in first box<hr> </p>
-    <p id="note">   Note:enter 0 as coefficient for degrees not present.<br /> ..<span>Example:2x^4+x^2+1</span></p>
-        <h2>METHOD<hr></h2>
-    <p id="entertwo"> Enter 2 as coefficient of x^4,enter 0 as coeffiecient of x^3 since it is not present and 1 as coefficient of x^2,<br/>
-        then the last 1 as it is a coeffiecent of x to power 0.<span><br/>2x^4 + 0*(x^3)+1*(x^2)+0*(x^1)+1*(x^0)</span>
+  <div class="container">
+    <header><h1 class="header_heading"> Polynomial Evaluator</h1></header>
+    <main>
+    <h2 id="instruct">Enter co-efficients of x from largest degree to lowest degree(power of zero) in first box</h2>
+    <p id="note">Note:enter 0 as coefficient for degrees not present.<br/><span>Example:2x^4+x^2+1</span></p>
+        <h2 class="method">METHOD</h2>
+    <p id="explain"> Enter 2 as coefficient of x^4,enter 0 as coeffiecient of x^3 since it is not present and 1 as coefficient of x^2,then the last 1 as it is a coeffiecent of x to power 0.<span><br/>2x^4 + 0*(x^3)+1*(x^2)+0*(x^1)+1*(x^0)</span>
       <br>click on enter coefficient after each entry and enter value of x in next box,then click on sum polynomial when all is done.
       <br>click on display to view coefficients</p>
-    <div class="forarray">
-      <label for="topush">Enter coefficients of x </label>
-      <input id="topush" type="number">
-       <label for="tosub" id="sub">Enter value of x</label>
-      <input id="tosub" type="number"> 
+    <div class="for_array">
+      <label for="toPush">Enter coefficients of x </label>
+      <input id="toPush" type="number">
+       <label for="toSub" id="sub">Enter value of x</label>
+      <input id="toSub" type="number"> 
     </div>
-    <p id="toread"></p>
+    <div id="to_read"></div>
     <div class="choices">
       <button id="but1">enter coefficient</button>
       <button id="but2">display</button>
       <button id="but3">sum polynomial </button>
      </div> 
-          
-       
+    </main>   
+    </div> 
     </body>
     <script src="script.js"></script>
 </html>
