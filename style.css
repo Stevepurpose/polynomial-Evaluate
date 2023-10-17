@@ -54,7 +54,6 @@ main{
 
 
 #note{
-    text-align: center;
     background-color:yellow;
     width: 100%;
     margin: auto;
@@ -64,15 +63,21 @@ main{
     box-shadow: 2px 2px 2px gainsboro;
 }
 
-#explain{
-    
+.explain{
     background-color:yellow;
     width: 100%;
-    margin: auto;
+    list-style: none;
     color: green;
-    font-size: larger;
+    font-size: 1.2rem;
     border: 5px solid gainsboro;
     box-shadow: 2px 2px 2px gainsboro;
+    margin: auto;
+}
+
+li{
+    margin-top:auto;
+    margin-bottom: auto;
+    width: 100%;
 }
 
 #method{
@@ -135,13 +140,13 @@ button:hover{
     color: yellow;
 }
 
-#explain:hover{
+.explain:hover{
     background-color: purple;
     color: yellow;
 }
 
 span{
-    font-size:1.8rem;
+    font-size: 1.5rem;
 }
 
 
@@ -205,6 +210,11 @@ span{
 }
 
 
+@media screen and (max-width:402px) {
+button{
+    height:2.8rem;
+}
+}
 @media screen and (max-width:331px) {
 button{
     color:green;

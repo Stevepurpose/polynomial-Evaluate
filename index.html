@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <title>polynomial calculator</title>
 </head>
-
 <body>
   <div class="container">
     <header><h1 class="header_heading"> Polynomial Evaluator</h1></header>
@@ -15,9 +14,16 @@
     <h2 id="instruct">Enter co-efficients of x from largest degree to lowest degree(power of zero) in first box</h2>
     <p id="note">Note:enter 0 as coefficient for degrees not present.<br/><span>Example:2x^4+x^2+1</span></p>
         <h2 class="method">METHOD</h2>
-    <p id="explain"> Enter 2 as coefficient of x^4,enter 0 as coeffiecient of x^3 since it is not present and 1 as coefficient of x^2,then the last 1 as it is a coeffiecent of x to power 0.<span><br/>2x^4 + 0*(x^3)+1*(x^2)+0*(x^1)+1*(x^0)</span>
-      <br>click on enter coefficient after each entry and enter value of x in next box,then click on sum polynomial when all is done.
-      <br>click on display to view coefficients</p>
+    <ul class="explain">
+      <li> Enter 2 as coefficient of x^4</li>
+      <li>Enter 0 as coeffiecient of x^3 since it is not present</li> 
+      <li>Enter 1 as coefficient of x^2</li>
+      <li>Enter the last as 1 as it is a coefficient of x to power 0.</li>
+      <li>2x^4 + 0*(x^3)+1*(x^2)+0*(x^1)+1*(x^0)</li>
+      <li>Click on enter coefficient after each entry and enter value of x in next box.</li>
+      <li>Click on sum polynomial when all is done.</li>
+      <li>Click on display to view coefficients.</li>
+    </ul>
     <div class="for_array">
       <label for="toPush">Enter coefficients of x </label>
       <input id="toPush" type="number">
