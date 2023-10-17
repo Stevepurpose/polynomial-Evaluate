@@ -29,7 +29,7 @@ n=polynomial.length
 coefficients =polynomial[i]
 to_read.innerHTML="coefficients of powers of x are:<br/>"
 for(var i=0;i<n;i++){   
-to_read.innerHTML+=polynomial[i] + " " 
+to_gitread.innerHTML+=polynomial[i] + " " 
 }
 
 break;
