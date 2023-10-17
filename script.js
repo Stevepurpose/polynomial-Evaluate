@@ -18,10 +18,11 @@ switch(button){
 case but1:
  coefficients=toPushA.value
 to_read.innerHTML=coefficients + " " + "is added "
-
+//toPushA.value=""
 polynomial.push(+coefficients)  //+ to convert string to number
-
+toPushA.value=""
 break;
+
 
 /*display*/
 case but2:
@@ -29,7 +30,7 @@ n=polynomial.length
 coefficients =polynomial[i]
 to_read.innerHTML="coefficients of powers of x are:<br/>"
 for(var i=0;i<n;i++){   
-to_gitread.innerHTML+=polynomial[i] + " " 
+to_read.innerHTML+=polynomial[i] + " " 
 }
 
 break;
