@@ -101,7 +101,7 @@ li{
     color:Green;
     font-size:1.5rem;
     text-align: center;
-    width: 25%;
+    width: 45%;
     margin: auto;
     padding: 1rem;
     
@@ -113,23 +113,29 @@ border-color:yellow;
     font-size:1.5rem;
     text-align: center;
     height:1.8rem;
-    width: 25%;
+    width: 45%;
     margin: auto;
     padding: 1rem;
     
 }
 .for_array{
     display:flex;
-    flex-direction: column;
+    flex-direction:row;
     margin:auto;
+    justify-content: center;
     
 }
+
+
+
+
 button{
     color:green;
     height:2.6rem;
-    padding:0.6rem;
+    padding:1.6rem;
     margin:0.5rem;
     background-color:yellow;
+    font-size: larger;
 }
 
 button:hover{
@@ -194,11 +200,41 @@ label{
         }
     }
 
+
+    @media screen and (max-width:617px) {
+    button{
+        font-size:smaller;
+    }
+
+
+    }
+
     @media screen and (max-width:522px) {
 .header_heading{
-    font-size:1.6rem;
+    font-size:rem;
 }
+
+button{
+    padding: 0.6rem;
+}
+
+input::placeholder{
+    font-size: smaller;
+}
+
  }
+
+ @media screen and (max-width:486px) {
+    button{
+        padding: 0.6rem;
+    }
+    
+    input::placeholder{
+        font-size:1rem;
+    }
+    
+     }
+
 
 @media screen and (max-width:417px) {
 h2{
@@ -215,6 +251,7 @@ span{
 @media screen and (max-width:402px) {
 button{
     height:2.8rem;
+    padding: 0.1rem;
 }
 }
 @media screen and (max-width:331px) {
