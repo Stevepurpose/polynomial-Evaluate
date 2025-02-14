@@ -50,10 +50,12 @@ main{
     margin: auto;  
     width: 100%;
     font-size: 1.3rem;
+    background-color: yellow;
+    color: green;
 }
 
 
-#note{
+ #note{
     background-color:yellow;
     width: 100%;
     margin: auto;
