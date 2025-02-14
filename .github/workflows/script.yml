@@ -1,0 +1,42 @@
+name: Test and Deploy
+
+on:
+  push:
+    branches:
+      - main  # Runs when code is pushed to the main branch
+
+jobs:
+  test:
+    name: Run Jest Tests
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4  # Clones the repository
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18  # Uses Node.js 18
+
+      - name: Install dependencies
+        run: npm install  # Installs Jest and dependencies
+
+      - name: Run tests
+        run: npm test  # Runs Jest tests
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: test  # Only runs if tests pass
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: main  # Deploys to the main branch
+          folder: .  # Deploys all files in the repo
+

@@ -103,6 +103,7 @@ li{
     text-align: center;
     width: 25%;
     margin: auto;
+    padding: 1rem;
     
 }
 
@@ -114,6 +115,7 @@ border-color:yellow;
     height:1.8rem;
     width: 25%;
     margin: auto;
+    padding: 1rem;
     
 }
 .for_array{

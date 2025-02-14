@@ -1,0 +1,27 @@
+{
+  "name": "polynomial-evaluate",
+  "version": "1.0.0",
+  "description": "Got the idea for this project while studying some Discrete maths.was built on the foundation of Horner's algorithm. The algorithm is recursive as can be seen in case 3 of my switch statements  which enables mathematicians evaluate polynomials of n degree and as somebody with an Engineering background,I know how it feels having a tool like this particularly since it has to do with algebra.Mathematicians will find this useful.",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stevepurpose/polynomial-Evaluate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Stevepurpose/polynomial-Evaluate/issues"
+  },
+  "homepage": "https://github.com/Stevepurpose/polynomial-Evaluate#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "jsdom": "^26.0.0"
+  }
+}

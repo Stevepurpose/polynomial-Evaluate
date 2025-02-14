@@ -1,57 +1,35 @@
-let polynomial=[]
-var y=polynomial.length
-var toSub=document.getElementById("toSub")
-let toPushA=document.getElementById("toPush")
-let choices=document.querySelector(".choices")
-let coefficients=toPushA.value
-var button=document.querySelector("button")
-let to_read=document.getElementById("to_read")
+let polynomial = [];
 
-/*event delegation*/
-choices.addEventListener("click",clicked)
-function clicked(e){
-if(e.target.matches("button")){
-var button=e.target
-switch(button){
+function setupDOM() {
+  let toSub = document.getElementById("toSub");
+  let toPushA = document.getElementById("toPush");
+  let choices = document.querySelector(".choices");
+  let to_read = document.getElementById("to_read");
 
-  /*enter x coefficients*/
-case but1:
- coefficients=toPushA.value
-to_read.innerHTML=coefficients + " " + "is added "
-//toPushA.value=""
-polynomial.push(+coefficients)  //+ to convert string to number
-toPushA.value=""
-break;
+  choices.addEventListener("click", (e) => {
+    if (e.target.matches("button")) {
+      switch (e.target.id) {
+        case "but1":
+          let coefficient = parseInt(toPushA.value);
+          polynomial.push(coefficient);
+          to_read.innerHTML = `${coefficient} is added `;
+          toPushA.value = "";
+          break;
 
+        case "but2":
+          to_read.innerHTML = "Coefficients of powers of x are:<br/>" + polynomial.join(" ");
+          break;
 
-/*display*/
-case but2:
-n=polynomial.length
-coefficients =polynomial[i]
-to_read.innerHTML="coefficients of powers of x are:<br/>"
-for(var i=0;i<n;i++){   
-to_read.innerHTML+=polynomial[i] + " " 
+        case "but3":
+          let unknown = parseInt(toSub.value);
+          let result = polynomial.reduce((acc, coeff, index) => acc * unknown + coeff, 0);
+          to_read.innerHTML = `The sum of the polynomial is: ${result}`;
+          break;
+      }
+    }
+  });
 }
 
-break;
+document.addEventListener("DOMContentLoaded", setupDOM);
 
-/*sum polynomial*/
-case but3: 
-//applying principle of Horner's algorithm  
-function Horner(polynomial){
-y=polynomial.length
-if(i==y) return;
-result=polynomial[i]+unknown*result
-i++
-Horner(polynomial) 
-}
-let unknown=toSub.value
-var i=1
-//initialize result with first coefficient of x at array index 0
-let result=polynomial[0]
-Horner(polynomial) 
-to_read.innerHTML="The sum of the polynomial is:"+ result
-break;
-}
-}
-}
+module.exports = { polynomial };
